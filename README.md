@@ -5,10 +5,10 @@ Static company-profile demonstration for a fictional residential remodeling firm
 ## Tech stack
 
 - The pages are static HTML and CSS, plus one small JavaScript file for the menu.
-- The house on the home hero and the kitchen on the Harleston case study are viewed with a separate bundle: React, React Three Fiber, and drei, built with Vite into `assets/viewer/viewer.js`. The rest of the site is not a React app.
+- The first screen is a photograph, not the 3D house. The house sits in a block below that screen, and the kitchen opens beside it. Both are viewed with a separate bundle: React, React Three Fiber, and drei, built with Vite into `assets/viewer/viewer.js`. The rest of the site is not a React app.
 - No database, and no server-side form handler. The contact form only shows a message in the browser.
 - Type is loaded from Google Fonts (Fraunces and Outfit), with system serif and sans fallbacks.
-- Photographs are local JPEGs saved from Unsplash (Unsplash License). They are stand-ins, not this firm’s work.
+- The first-screen photograph is `assets/shore-hero.jpg`, an aerial of beachfront apartments by Matt Fitz Gibaud on Pexels (https://www.pexels.com/photo/aerial-view-of-beachfront-apartments-at-sunset-36788380/). The page credits that name. It is not a Vinode image and not this firm’s work. Older page photographs, where they remain, are local JPEGs saved from Unsplash (Unsplash License), also stand-ins.
 - `assets/models/house.glb` is the Quaternius house from https://poly.pizza/m/HeHDd2rTpX (CC0). The Harleston page uses that same Quaternius floor (`assets/models/kitchen.glb`, mesh `Floor_Kitchen1`, from https://poly.pizza/m/iDftIvQZWE, CC0) plus three Kenney Furniture Kit pieces, also CC0: `assets/models/kenney-cabinet.glb`, `kenney-fridge.glb`, and `kenney-stove.glb` from https://kenney.nl/assets/furniture-kit. The page calls this a visual demo, low poly, not a photograph of the fictional Harleston kitchen. Rebuild the viewer from `viewer/` with `npm install` and `npm run build`.
 
 Open `index.html` in a browser, or serve the folder with any static file server so root-relative links resolve. Example:
