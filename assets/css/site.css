@@ -2,7 +2,7 @@
   --paper: #f3eee4;
   --paper-deep: #e7dfd1;
   --sheet: #fbf7f0;
-  --ink: #241c14;
+  --ink: #14110e;
   --muted: #5a4e43;
   --pine: #2c4033;
   --pine-deep: #1c2b22;
@@ -24,12 +24,32 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
   font-size: 1.05rem;
   line-height: 1.55;
   font-weight: 400;
+  background-color: #f4efe6;
+  background-image: linear-gradient(118deg, #f7f2ea 0%, #f3eee4 28%, #ead8c8 62%, #f6efe4 100%);
+  background-size: 220% 220%;
+  animation: paper-drift 42s ease-in-out infinite alternate;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  opacity: 0.12;
+  background-image: radial-gradient(rgba(28, 18, 10, 0.45) 0.45px, transparent 0.55px);
+  background-size: 2.5px 2.5px;
+  mix-blend-mode: multiply;
+}
+
+@keyframes paper-drift {
+  from { background-position: 0% 40%; }
+  to { background-position: 100% 70%; }
 }
 
 img { max-width: 100%; display: block; }
@@ -63,7 +83,7 @@ p { margin: 0; }
 .wrap { width: min(var(--wrap), calc(100% - 2.5rem)); margin-inline: auto; }
 .wrap-wide { width: min(var(--wide), calc(100% - 2.5rem)); margin-inline: auto; }
 
-.topline {
+.topline { display: none;
   background: var(--pine-deep);
   color: #efe7da;
   font-size: 0.86rem;
@@ -88,7 +108,7 @@ p { margin: 0; }
   grid-template-columns: auto minmax(0, 1fr) auto;
   gap: 1.25rem;
   align-items: center;
-  padding: 0.85rem 1.25rem;
+  padding: 0.55rem 1.25rem;
   background: rgba(243, 238, 228, 0.94);
   border-bottom: 1px solid var(--rule);
   backdrop-filter: saturate(1.1);
@@ -126,6 +146,7 @@ p { margin: 0; }
 }
 
 .nav-toggle { display: none; }
+.head-cta { display: none; }
 .site-nav .nav-cta { display: none; }
 
 .btn {
@@ -150,13 +171,32 @@ p { margin: 0; }
 .btn-line { border-color: var(--ink); color: var(--ink); }
 .btn-line:hover { background: var(--ink); color: var(--paper); }
 
+.site-head .head-cta { display: none; }
+
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  gap: 2.5rem;
-  align-items: end;
-  padding: 2.4rem 0 1.5rem;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: center;
+  padding: 3.2rem 0 2.4rem;
 }
+
+.neighborhoods {
+  list-style: none;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.neighborhoods a {
+  color: var(--ink);
+  text-decoration: none;
+  font-family: var(--serif);
+  font-size: 1.25rem;
+}
+
+.neighborhoods a:hover { color: var(--clay); }
 
 .eyebrow {
   font-size: 0.82rem;
@@ -265,9 +305,8 @@ p { margin: 0; }
 
 .work-grid {
   display: grid;
-  grid-template-columns: 1.25fr 0.85fr;
-  grid-template-rows: auto auto;
-  gap: 1.1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
 }
 .work-card {
   display: flex;
@@ -277,11 +316,10 @@ p { margin: 0; }
   text-decoration: none;
   border: 1px solid var(--rule);
   min-height: 100%;
+  box-shadow: 0 10px 22px rgba(20, 17, 14, 0.06);
 }
 .work-card:hover { color: inherit; border-color: #b7ab9a; }
-.work-grid .work-card:first-child { grid-row: span 2; }
 .work-card img { width: 100%; height: 240px; object-fit: cover; }
-.work-grid .work-card:first-child img { height: 460px; }
 .work-card div { padding: 1rem 1.05rem 1.15rem; }
 .work-card .kicker {
   font-size: 0.78rem;
@@ -292,6 +330,7 @@ p { margin: 0; }
 }
 .work-card h3 { font-size: 1.65rem; margin: 0.3rem 0 0.4rem; }
 .work-card p { color: var(--muted); }
+.work-card .price { margin: 0.15rem 0 0.35rem; color: var(--ink); font-family: var(--serif); font-size: 1.2rem; }
 
 .quotes {
   background: var(--sheet);
@@ -573,7 +612,7 @@ textarea { min-height: 8rem; resize: vertical; }
   .hero-facts, .areas, .statbar, .floors, .form-row, .foot-grid { grid-template-columns: 1fr; }
   .work-grid { grid-template-columns: 1fr; }
   .work-grid .work-card:first-child { grid-row: auto; }
-  .work-card img, .work-grid .work-card:first-child img, .hero-photo img { height: 280px; }
+  .work-card img, .hero-photo img { height: 280px; }
   .service-index li { grid-template-columns: auto 1fr; }
   .service-index li a { grid-column: 2; }
   .visit, .section-head, .next-work { flex-direction: column; align-items: flex-start; }
@@ -582,6 +621,7 @@ textarea { min-height: 8rem; resize: vertical; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  body { animation: none; }
 }
 
 .model-canvas {
