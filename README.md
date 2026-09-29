@@ -9,7 +9,7 @@ Static company-profile demonstration for a fictional residential remodeling firm
 - No database, and no server-side form handler. The contact form only shows a message in the browser.
 - Type is loaded from Google Fonts (Fraunces and Outfit), with system serif and sans fallbacks.
 - Photographs are local JPEGs saved from Unsplash (Unsplash License). They are stand-ins, not this firm’s work.
-- `assets/models/house.glb` is the Quaternius house from https://poly.pizza/m/HeHDd2rTpX (CC0). `assets/models/kitchen.glb` is the Quaternius kitchen from https://poly.pizza/m/iDftIvQZWE (CC0); the file shipped here is only a floor mesh. Both are labeled on the page as visual demos, not photographs of Charleston jobs. Rebuild the viewer from `viewer/` with `npm install` and `npm run build`.
+- `assets/models/house.glb` is the Quaternius house from https://poly.pizza/m/HeHDd2rTpX (CC0). The Harleston page uses that same Quaternius floor (`assets/models/kitchen.glb`, mesh `Floor_Kitchen1`, from https://poly.pizza/m/iDftIvQZWE, CC0) plus three Kenney Furniture Kit pieces, also CC0: `assets/models/kenney-cabinet.glb`, `kenney-fridge.glb`, and `kenney-stove.glb` from https://kenney.nl/assets/furniture-kit. The page calls this a visual demo, low poly, not a photograph of the fictional Harleston kitchen. Rebuild the viewer from `viewer/` with `npm install` and `npm run build`.
 
 Open `index.html` in a browser, or serve the folder with any static file server so root-relative links resolve. Example:
 
