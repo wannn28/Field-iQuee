@@ -582,3 +582,18 @@ textarea { min-height: 8rem; resize: vertical; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+.model-canvas {
+  width: 100%;
+  height: min(72vh, 640px);
+  background: var(--paper-deep);
+  touch-action: none;
+}
+
+.model-canvas canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.study-top .model-canvas { height: min(64vh, 520px); }

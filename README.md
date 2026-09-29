@@ -4,10 +4,12 @@ Static company-profile demonstration for a fictional residential remodeling firm
 
 ## Tech stack
 
-- Static HTML, CSS, and one small JavaScript file.
-- No framework, no build step, no database, and no server-side form handler.
+- The pages are static HTML and CSS, plus one small JavaScript file for the menu.
+- The house on the home hero and the kitchen on the Harleston case study are viewed with a separate bundle: React, React Three Fiber, and drei, built with Vite into `assets/viewer/viewer.js`. The rest of the site is not a React app.
+- No database, and no server-side form handler. The contact form only shows a message in the browser.
 - Type is loaded from Google Fonts (Fraunces and Outfit), with system serif and sans fallbacks.
-- Photographs are local JPEGs saved from Unsplash (Unsplash License). They are stand-ins of houses, kitchens, and materials. They are not pictures of this firm’s work. No photograph is presented as a staff portrait.
+- Photographs are local JPEGs saved from Unsplash (Unsplash License). They are stand-ins, not this firm’s work.
+- `assets/models/house.glb` is the Quaternius house from https://poly.pizza/m/HeHDd2rTpX (CC0). `assets/models/kitchen.glb` is the Quaternius kitchen from https://poly.pizza/m/iDftIvQZWE (CC0). Both are labeled on the page as visual demos, not photographs of Charleston jobs. Rebuild the viewer from `viewer/` with `npm install` and `npm run build`.
 
 Open `index.html` in a browser, or serve the folder with any static file server so root-relative links resolve. Example:
 
@@ -31,10 +33,9 @@ The section order follows a typical WordPress / Elementor company-profile layout
 4. Short introduction
 5. Services
 6. Featured projects
-7. Testimonials
-8. Areas served
-9. Quote-request band
-10. Footer
+7. Areas served
+8. Quote-request band
+9. Footer
 
 There is no shop, cart, checkout, or product grid.
 
@@ -66,4 +67,4 @@ Downloaded from `images.unsplash.com` after each URL returned HTTP 200:
 
 ## Not published
 
-This copy lives only as files in this folder. It is not on a public host.
+The public demo is https://field.iquee.tech. Dollar figures stay labeled as demo figures. The form does not send.
