@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Field & Timber — Charleston residential remodeling</title>
-  <meta name="description" content="Field & Timber is a fictional Charleston remodeling shop. Turn the house, then open a room. Sample figures are demo numbers, not prices.">
+  <meta name="description" content="Field & Timber is a fictional Charleston remodeling shop. A demonstration site: sample jobs, a written schedule, and figures that are not bids.">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,460;9..144,560&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/field-home.css?v=20260929u">
+  <link rel="stylesheet" href="/assets/css/home.css?v=20260930e">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -20,127 +20,250 @@
     "areaServed": ["Charleston, SC"],
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "18 Bogard Street",
       "addressLocality": "Charleston",
       "addressRegion": "SC",
+      "postalCode": "29403",
       "addressCountry": "US"
     }
   }
   </script>
 </head>
-<body class="field-home">
-  <header class="capsule">
-    <a class="wordmark" href="#top">Field &amp; Timber</a>
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#rooms">Rooms</a>
-      <a href="#questions">Questions</a>
-    </nav>
+<body>
+  <a class="skip" href="#home">Skip to content</a>
+  <p class="demo-strip">Demonstration only. Field &amp; Timber, the address, the phone, and every figure are fictional.</p>
+
+  <header class="site-head">
+    <div class="wrap head-row">
+      <a class="wordmark" href="#home"><strong>Field &amp; Timber</strong><span>REMODELING</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn-line" href="https://wa.me/18435550148?text=Halo%20Field%20%26%20Timber%2C%20saya%20mau%20minta%20jadwal%20walk-through.%20Ini%20dari%20situs%20demo." target="_blank" rel="noopener">Get in Touch
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+    </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <img class="hero-land" src="/assets/shore-hero.jpg" alt="Beachfront apartments in warm evening light, photographed by Matt Fitz Gibaud. Not a Field and Timber job.">
-      <div class="hero-copy">
-        <h1>Rooms that still feel like the house.</h1>
-        <p class="lede">A Charleston demonstration. Turn the sample house, then read the figures. None of them is a price.</p>
+  <main>
+    <section class="hero" id="home">
+      <ul class="slides">
+        <li class="is-on"><img src="/assets/img/house-dusk.jpg" alt="Shingled house with a white porch and dormers"></li>
+        <li><img src="/assets/img/house-front.jpg" alt="Two-story gallery with slender columns"></li>
+        <li><img src="/assets/img/brick.jpg" alt="A stone house reflected in still water"></li>
+      </ul>
+      <div class="wrap hero-copy">
+        <p class="eyebrow">Houses / Rooms / Better living</p>
+        <h1>Rooms That Still Feel Like the House</h1>
+        <p>Field &amp; Timber is a fictional Charleston shop that remodels houses people already live in. Every photograph here is a stand-in.</p>
+        <a class="arrow-link" href="#works">Explore Our Works
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
       </div>
-      <div class="points">
-        <p><strong>Turn the house.</strong> Front, side, and back stay on this page. The whole body sits in the frame, not just the roof.</p>
-        <p><strong>Open a room.</strong> The kitchen has its own canvas. Restoration is notes only, because it has no model.</p>
-        <p><strong>Read the figure.</strong> Every number is marked demo. Nothing on this page is for sale.</p>
-      </div>
-      <p class="hero-credit">Photo by Matt Fitz Gibaud</p>
-    </section>
-
-    <section id="house" class="house-anchor">
-      <div id="field-home"></div>
-    </section>
-
-    <section id="figures" class="band">
-      <div class="figures">
-        <p><span>$86,400</span> Kitchen demo</p>
-        <p><span>$214,000</span> Restoration demo</p>
-        <p><span>$468,000</span> Whole home demo</p>
+      <div class="dots" role="group" aria-label="Hero photographs">
+        <button type="button" aria-current="true">01</button>
+        <button type="button" aria-current="false">02</button>
+        <button type="button" aria-current="false">03</button>
       </div>
     </section>
 
-    <section id="work" class="band">
-      <h2>Sample jobs</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Harleston kitchen</h3>
-          <p>A sample kitchen inside a Charleston house. The furniture is a low-poly kit, not a photograph of a finished job.</p>
-          <p class="figure">$86,400 demo</p>
+    <section class="band" id="services">
+      <div class="wrap services">
+        <div class="services-head">
+          <p class="eyebrow">Our services</p>
+          <h2>From Survey to Finish</h2>
+        </div>
+        <article class="service">
+          <svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.1"><rect x="5" y="13" width="22" height="14"/><path d="M5 18h22M12 13v14M3 13h26M9 13V7h14v6M14 22h2"/></svg>
+          <h3>Kitchens</h3>
+          <p>Galleys opened toward the garden. Soapstone on the counters, painted inset doors, and a heart-pine floor patched instead of replaced.</p>
         </article>
-        <article class="card">
-          <h3>Restoration</h3>
-          <p>A sample restoration of an existing room. This one has no model of its own. The house above stands in for the building.</p>
-          <p class="figure">$214,000 demo</p>
+        <article class="service">
+          <svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M4 12 16 4l12 8M6 12v15h20V12M10 27V16M16 27V16M22 27V16M4 27h24"/></svg>
+          <h3>Historic Restoration</h3>
+          <p>Piazzas, sash, and plaster that stays. Posts and rails are drawn before anyone orders cypress. The street front is repaired, not redesigned.</p>
         </article>
-        <article class="card">
-          <h3>Whole home</h3>
-          <p>A sample for the full house, using the same model you can turn in the block above.</p>
-          <p class="figure">$468,000 demo</p>
+        <article class="service">
+          <svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M4 15 16 5l12 10M7 13v14h18V13M13 27v-8h6v8M21 8V5h3v5"/></svg>
+          <h3>Whole-Home</h3>
+          <p>Systems first, and the facade left alone. Panel, heat, and baths sit in the middle of the schedule. Paint and the porch come last.</p>
         </article>
-      </div>
-    </section>
-
-    <section id="steps" class="band">
-      <h2>How to look</h2>
-      <ol class="steps">
-        <li><span>01</span><h3>Turn it</h3><p>Drag the house, or pick Front, Side, or Back. The camera stays aimed at the middle.</p></li>
-        <li><span>02</span><h3>Open a room</h3><p>Kitchen brings in the furniture kit on a second canvas. Restoration stays as text.</p></li>
-        <li><span>03</span><h3>Close it</h3><p>Whole house clears the side panel and returns the block to the full building.</p></li>
-      </ol>
-    </section>
-
-    <section id="rooms" class="band">
-      <h2>What the shop shows</h2>
-      <div class="services">
-        <article>
-          <h3>Kitchen</h3>
-          <p>Cabinets, a fridge, and a stove on their own canvas. Open Kitchen on the house to see them. The house camera stays where you left it.</p>
-        </article>
-        <article>
-          <h3>Restoration</h3>
-          <p>Repair and finish work on a room that is already there. Shown as notes only, because this demonstration has no second model for it.</p>
-        </article>
-        <article>
-          <h3>Whole house</h3>
-          <p>The building treated as one job. Choosing it closes the side panel and brings the house back to the full block.</p>
+        <article class="service">
+          <svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M4 16h24v4a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6v-4zM8 16V8a3 3 0 0 1 6 0M9 26l-1 3M23 26l1 3"/></svg>
+          <h3>Baths</h3>
+          <p>Scoped with a kitchen or a whole home, not as its own contract here. Beadboard, a sink that drains, and brass left to go dull.</p>
         </article>
       </div>
     </section>
 
-    <section id="questions" class="band">
-      <h2>Questions</h2>
-      <div class="asks">
-        <details>
-          <summary>Is Field &amp; Timber a real shop?</summary>
-          <p>No. It is a fictional Charleston remodeler, built as a portfolio demonstration. You cannot hire it, and the address is not a storefront.</p>
-        </details>
-        <details>
-          <summary>Are the figures prices?</summary>
-          <p>No. $86,400, $214,000, and $468,000 are sample numbers so the page has something to show. They are not bids and not sale prices.</p>
-        </details>
-        <details>
-          <summary>Is the house a real property?</summary>
-          <p>No. The house is a CC0 model, and the kitchen pieces are a CC0 furniture kit. Neither is a photograph of a Charleston job.</p>
-        </details>
+    <section class="section band" id="works">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Featured projects</p>
+            <h2>Selected Works</h2>
+          </div>
+          <button class="arrow-link" type="button" id="more-works" aria-expanded="false" aria-controls="works-grid">View All Works
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+          </button>
+        </div>
+        <div class="works" id="works-grid">
+          <a class="work" href="/work/harleston-kitchen/">
+            <img src="/assets/img/kitchen-island.jpg" alt="Kitchen with a marble island and wood stools">
+            <div class="work-meta">
+              <div><h3>Harleston Kitchen</h3><span>Kitchen / Demo</span></div>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+          </a>
+          <a class="work" href="/work/south-of-broad/">
+            <img src="/assets/img/house-front.jpg" alt="White gallery house with columns and weatherboard">
+            <div class="work-meta">
+              <div><h3>Piazza House</h3><span>Restoration / Demo</span></div>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+          </a>
+          <a class="work" href="/work/wagener-whole-home/">
+            <img src="/assets/img/house-dusk.jpg" alt="Shingled cottage with a porch and dormers">
+            <div class="work-meta">
+              <div><h3>Wagener Cottage</h3><span>Whole-Home / Demo</span></div>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+          </a>
+          <a class="work" href="#contact">
+            <img src="/assets/img/bath.jpg" alt="Small bathroom with beadboard and a pedestal sink">
+            <div class="work-meta">
+              <div><h3>Cannon Bath</h3><span>Bath / Demo</span></div>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+          </a>
+          <a class="work is-more" href="/work/harleston-kitchen/">
+            <img src="/assets/img/kitchen-wood.jpg" alt="Marble counter, enamel pots, and white cabinets">
+            <div class="work-meta">
+              <div><h3>Cabinet Paint</h3><span>Kitchen / Demo</span></div>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+          </a>
+          <a class="work is-more" href="/work/wagener-whole-home/">
+            <img src="/assets/img/sink.jpg" alt="Vanity in blue-gray cabinets with a white stone top">
+            <div class="work-meta">
+              <div><h3>Hall Fittings</h3><span>Bath / Demo</span></div>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+          </a>
+          <a class="work is-more" href="/work/south-of-broad/">
+            <img src="/assets/img/dining.jpg" alt="Kitchen with oak floorboards and a stone island">
+            <div class="work-meta">
+              <div><h3>Stone Island</h3><span>Kitchen / Demo</span></div>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+          </a>
+          <a class="work is-more" href="#contact">
+            <img src="/assets/img/brick.jpg" alt="A stone house reflected in still water">
+            <div class="work-meta">
+              <div><h3>Garden Wall</h3><span>House / Demo</span></div>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="about">
+      <div class="wrap about">
+        <figure class="about-photo">
+          <img src="/assets/img/hallway.jpg" alt="Rooms opening toward a kitchen, with wood floors">
+          <span>01</span>
+        </figure>
+        <div class="about-copy">
+          <p class="eyebrow">About us</p>
+          <h2>Designing Rooms.<br>Keeping Houses.</h2>
+          <p>A small shop with a written schedule, in this demonstration. Heart pine, cypress, limewash, soapstone, and brass that is allowed to go dull. No spec homes and no catalog.</p>
+          <button class="arrow-link" type="button" id="more-about" aria-expanded="false" aria-controls="about-more">Learn More
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+          </button>
+          <div class="about-more" id="about-more" hidden>
+            <p>Drawings come first. Site work does not start the day a contract is signed. In the sample jobs the lead time is five weeks, usually for doors, and the usual drive is twenty-five minutes.</p>
+            <p>Heart pine is patched, not replaced. Cypress is for porch posts and decking. Soapstone is for counters. Brass is unlacquered and allowed to go dull. The address and the phone on this site are part of the demonstration.</p>
+          </div>
+        </div>
+        <dl class="stats">
+          <div><dt>Sample jobs</dt><dd>3</dd></div>
+          <div><dt>Carpenters</dt><dd>4</dd></div>
+          <div><dt>Weeks of lead time</dt><dd>5</dd></div>
+          <div><dt>Minutes, usual drive</dt><dd>25</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section band" id="process">
+      <div class="wrap process">
+        <figure class="process-photo" style="margin:0">
+          <img src="/assets/img/dining.jpg" alt="Kitchen with oak floorboards and a stone island">
+        </figure>
+        <div class="process-copy">
+          <p class="eyebrow">Our process</p>
+          <h2>A Written Schedule</h2>
+          <p>Drawings come before orders, and site work does not start the day a contract is signed.</p>
+        </div>
+        <ol class="steps">
+          <li><b>01</b><h3>Measure</h3><p>One visit and<br>a notebook</p></li>
+          <li><b>02</b><h3>Draw</h3><p>Rooms, materials,<br>and weeks</p></li>
+          <li><b>03</b><h3>Order</h3><p>Millwork, stone,<br>and brass</p></li>
+          <li><b>04</b><h3>Build</h3><p>Protect, systems,<br>then finish</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <img src="/assets/img/floor.jpg" alt="">
+      <div class="wrap cta-row">
+        <div>
+          <p class="eyebrow">Let’s work together</p>
+          <h2>Have a Project in Mind?</h2>
+          <p>The button opens WhatsApp with a draft. (843) 555-0148 is a demo number, not a working shop line.</p>
+        </div>
+        <a class="btn-line" href="https://wa.me/18435550148?text=Halo%20Field%20%26%20Timber%2C%20saya%20mau%20minta%20jadwal%20walk-through.%20Ini%20dari%20situs%20demo." target="_blank" rel="noopener">Contact Us
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
       </div>
     </section>
   </main>
 
-  <script>
-    document.querySelectorAll('#questions details').forEach((item) => {
-      item.addEventListener('toggle', () => {
-        if (!item.open) return
-        document.querySelectorAll('#questions details').forEach((other) => {
-          if (other !== item) other.open = false
-        })
-      })
-    })
-  </script>
-  <script type="module" src="/assets/viewer/viewer.js?v=20260929p"></script>
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-row">
+        <a class="wordmark" href="#home"><strong>Field &amp; Timber</strong><span>REMODELING</span></a>
+        <nav class="nav" aria-label="Footer">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="/connect/#instagram" aria-label="Instagram"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="2" width="12" height="12" rx="3.5"/><circle cx="8" cy="8" r="2.8"/><circle cx="11.6" cy="4.4" r="0.5" fill="currentColor"/></svg></a>
+          <a href="/connect/#linkedin" aria-label="LinkedIn"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M3 6h2v7H3zM4 2.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM7 6h2v1c.4-.7 1.2-1.2 2.3-1.2 2 0 2.7 1.2 2.7 3.2v4h-2V9.4c0-1-.3-1.7-1.3-1.7S9 8.4 9 9.5V13H7z"/></svg></a>
+          <a href="/connect/#behance" aria-label="Behance"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M1.5 4h3.3a1.8 1.8 0 0 1 0 3.6H1.5zM1.5 7.6h3.8a2.1 2.1 0 0 1 0 4.2H1.5zM9.2 9.4h5.3a2.6 2.6 0 1 0-.8 2M10 4.6h3.6"/></svg></a>
+          <a href="/connect/#x" aria-label="X"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2.5 2.5l11 11M13.5 2.5l-11 11"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-note">
+        <p>© 2026 Field &amp; Timber. Demonstration only.</p>
+        <p><span>Privacy Policy</span><span>Terms &amp; Conditions</span></p>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=20260930e"></script>
 </body>
 </html>
